@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "CSC475_CTA7_UnitConverter"
 include(":app")
- 
+

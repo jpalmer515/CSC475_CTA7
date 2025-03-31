@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.utils.toSetOrEmpty
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -57,4 +59,13 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation(libs.androidx.navigation.compose)
+    testImplementation("libs.androidx.test:score:$1.7.0")
+    testImplementation("org.mockito:mockito-core:$3.2.0")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:$3.2.0")
+    testImplementation("io.mock:mock:$1.13.17")
+    testImplementation(libs.robolectric)
+    androidTestImplementation(libs.ui.test.junit4)
+    androidTestImplementation(libs.ui.test.manifest)
+
 }
+
